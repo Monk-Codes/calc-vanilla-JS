@@ -1,0 +1,116 @@
+body{
+    width: 500px;
+    margin: 4% auto;
+    font-family: monospace;
+    letter-spacing: 8px;
+    font-size: medium;
+    border: 2px solid black;
+    user-select: none;
+    -webkit-user-select: none;
+}
+/* input box */
+#input{
+    border: 2px solid  #3F5D7D;
+    border-radius: 10px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: medium;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+.input:hover {
+    border: 1px solid orangered;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+/* operator box */
+.operator div{
+    display: inline-block;
+    border: 2px solid #3F5D7D;
+    border-radius: 6px;
+    width: 80px;
+    text-align: center;
+    padding: 7px;
+    margin: 10px 4px 10px 0px;
+    cursor: pointer;
+    background-color:rebeccapurple;
+    transition: border-color .2s ease-in-out,background-color .2s,box-shadow .2s
+}
+.operator div:hover{
+    background-color: blueviolet;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: orangered;
+}
+.operator div:active{
+    font-weight: bolder;
+}
+/* operator end */
+
+/* number box */
+.numbers div{
+    display: inline-block;
+    border: 2px solid #3F5D7D;
+    border-radius: 6px;
+    width: 80px;
+    text-align: center;
+    padding: 7px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color:rebeccapurple;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+.numbers div:hover {
+    background-color: blueviolet;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: orangered;
+  }
+  
+  .numbers div:active {
+    font-weight: bolder;
+  }
+/* number end */
+
+/* Casing */
+.calc{
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.panel{
+    display: inline-block;
+}
+/* = button */
+#result {
+    display: inline-block;
+    border: 2px solid #3F5D7D;
+    border-radius: 6px;
+    width: 70px;
+    text-align: center;
+    padding: 90px 12px;
+    margin: 10px 4px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #4d90fe;
+    transition: all .2s ease-in-out;
+  }
+#result:hover {
+    background-color: #4d91fee5;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: orangered;
+  }
+#result:active {
+    font-weight: bolder;
+  }
+.tag{
+background-color: blanchedalmond;
+text-align: center;
+color: blueviolet;
+font-family: cursive;
+  }
